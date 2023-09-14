@@ -1,0 +1,163 @@
+.footer {
+  padding: 35px 0 23px;
+  background-color: #00171f;
+
+  &__body {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.4s;
+
+    &:hover {
+      color: #33c5f3;
+    }
+  }
+
+  &__column {
+    width: 245px;
+
+    &-block {
+      margin-bottom: 15px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 55px;
+    }
+  }
+
+  &__contact {
+    &-inner {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &-time {
+      font-weight: 400;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    &-phone {
+      font-weight: 500;
+      font-size: 24px;
+      color: #fff;
+      transition: color 0.4s;
+
+      &:hover {
+        color: #33c5f3;
+      }
+    }
+
+    &-wa {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+      transition: color 0.4s;
+
+      svg {
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+        transition: fill 0.4s;
+      }
+
+      &:hover {
+        color: #33c5f3;
+
+        svg {
+          fill: #33c5f3;
+        }
+      }
+    }
+
+    &-btn {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &-mail {
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+      transition: color 0.4s;
+
+      &:hover {
+        color: #33c5f3;
+      }
+    }
+
+    &-address {
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+    }
+
+    &-links {
+      a {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        transition: color 0.4s;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        &:hover {
+          color: #33c5f3;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #2c5461;
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #33c5f380;
+  }
+
+  &__rights {
+    margin-bottom: 20px;
+  }
+
+  &__recommendations {
+    &-mail {
+      color: #33c5f380;
+    }
+  }
+}

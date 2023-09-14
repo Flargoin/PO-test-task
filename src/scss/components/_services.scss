@@ -1,0 +1,28 @@
+.services {
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0 auto 25px;
+    max-width: 960px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    .card {
+      height: 100%;
+    }
+  }
+
+  &__descr {
+    margin: 0 auto;
+    max-width: 1065px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #00171f4d;
+  }
+}

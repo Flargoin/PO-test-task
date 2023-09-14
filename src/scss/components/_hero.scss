@@ -1,0 +1,36 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: calc(100vh - 110px);
+  background-image: url("../../img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    max-width: 640px;
+    text-align: left;
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+    max-width: 660px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 525px;
+  }
+}

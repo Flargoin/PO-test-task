@@ -1,0 +1,27 @@
+.social {
+  margin-top: 38px;
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: #fff;
+      transition: fill 0.4s;
+    }
+
+    &:hover {
+      svg {
+        fill: #33c5f3;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.btn {
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+  height: 30px;
+  min-width: 120px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #33c5f3;
+  transition: background-color 0.4s, color 0.4s, border 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    border: 1.5px solid #33c5f3;
+    color: #33c5f3;
+    background-color: transparent;
+  }
+
+  &--outline-red {
+    border: 1.5px solid #ff005c;
+    color: #ff005c;
+    background-color: transparent;
+
+    &:hover {
+      border: 1.5px solid #ff005c;
+      color: #fff;
+      background-color: #ff005c;
+    }
+  }
+
+  &--red {
+    color: #fff;
+    background-color: #ff005c;
+
+    &:hover {
+      border: 1.5px solid #ff005c;
+      color: #ff005c;
+      background-color: transparent;
+    }
+  }
+
+  &--w110 {
+    min-width: 110px;
+  }
+
+  &--w130 {
+    height: 50px;
+    min-width: 130px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &--w140 {
+    height: 50px;
+    min-width: 140px;
+  }
+
+  &--w240 {
+    height: 50px;
+    min-width: 240px;
+  }
+}
