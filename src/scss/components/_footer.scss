@@ -1,6 +1,6 @@
 .footer {
   padding: 35px 0 23px;
-  background-color: #00171f;
+  background-color: var(--text-color);
 
   &__body {
     padding-bottom: 30px;
@@ -16,23 +16,12 @@
     margin-bottom: 15px;
     font-weight: 500;
     font-size: 16px;
-    color: #fff;
+    color: var(--light-color);
   }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: 10px;
-    }
-  }
-
-  &__link {
-    font-weight: 400;
-    font-size: 16px;
-    color: #fff;
-    transition: color 0.4s;
-
-    &:hover {
-      color: #33c5f3;
     }
   }
 
@@ -58,42 +47,46 @@
     &-time {
       font-weight: 400;
       font-size: 12px;
-      color: #fff;
+      color: var(--light-color);
     }
 
     &-phone {
+      @include state;
+
       font-weight: 500;
       font-size: 24px;
-      color: #fff;
+      color: var(--light-color);
       transition: color 0.4s;
 
       &:hover {
-        color: #33c5f3;
+        color: var(--blue-color);
       }
     }
 
     &-wa {
+      @include state;
+
       display: flex;
       align-items: center;
       margin-bottom: 10px;
       font-weight: 400;
       font-size: 16px;
-      color: #fff;
+      color: var(--light-color);
       transition: color 0.4s;
 
       svg {
         margin-right: 5px;
         width: 20px;
         height: 20px;
-        fill: #fff;
+        fill: var(--light-color);
         transition: fill 0.4s;
       }
 
       &:hover {
-        color: #33c5f3;
+        color: var(--blue-color);
 
         svg {
-          fill: #33c5f3;
+          fill: var(--blue-color);
         }
       }
     }
@@ -104,13 +97,15 @@
     }
 
     &-mail {
+      @include state;
+
       font-weight: 400;
       font-size: 16px;
-      color: #fff;
+      color: var(--light-color);
       transition: color 0.4s;
 
       &:hover {
-        color: #33c5f3;
+        color: var(--blue-color);
       }
     }
 
@@ -120,15 +115,17 @@
       font-style: normal;
       font-size: 16px;
       line-height: 20px;
-      color: #fff;
+      color: var(--light-color);
     }
 
     &-links {
       a {
+        @include state;
+
         display: block;
         font-weight: 400;
         font-size: 16px;
-        color: #fff;
+        color: var(--light-color);
         transition: color 0.4s;
 
         &:not(:last-child) {
@@ -136,7 +133,7 @@
         }
 
         &:hover {
-          color: #33c5f3;
+          color: var(--blue-color);
         }
       }
     }
@@ -148,7 +145,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
-    color: #33c5f380;
+    color: var(--footer-text-color);
   }
 
   &__rights {
@@ -157,7 +154,9 @@
 
   &__recommendations {
     &-mail {
-      color: #33c5f380;
+      @include state;
+
+      color: var(--blue-color)80;
     }
   }
 }

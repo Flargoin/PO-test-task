@@ -1,9 +1,9 @@
 .card {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: var(--radius-20);
   max-width: 300px;
-  background-color: #fff;
+  background-color: var(--light-color);
 
   &__top {
     margin-bottom: 12px;
@@ -14,7 +14,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 20px;
+      border-radius: var(--radius-20);
       width: 100%;
       height: 100%;
       background: linear-gradient(123deg, #dad7d5 0%, #d9d0cc 100%);
@@ -33,7 +33,7 @@
       font-weight: 700;
       font-size: 48px;
       text-align: center;
-      color: #00171f;
+      color: var(--text-color);
     }
 
     &-btn {

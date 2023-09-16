@@ -1,42 +1,57 @@
 .btn {
   border: 1.5px solid transparent;
-  border-radius: 5px;
+  border-radius: var(--radius-5);
   height: 30px;
   min-width: 120px;
   font-weight: 700;
   font-size: 12px;
   line-height: 50%;
   text-align: center;
-  color: #fff;
-  background-color: #33c5f3;
+  color: var(--light-color);
+  background-color: var(--blue-color);
   transition: background-color 0.4s, color 0.4s, border 0.4s;
   cursor: pointer;
 
+  &:focus {
+    outline: 2px solid var(--blue-color);
+    outline-offset: 2px;
+  }
+
   &:hover {
-    border: 1.5px solid #33c5f3;
-    color: #33c5f3;
+    border: 1.5px solid var(--blue-color);
+    color: var(--blue-color);
     background-color: transparent;
   }
 
   &--outline-red {
-    border: 1.5px solid #ff005c;
-    color: #ff005c;
+    border: 1.5px solid var(--folly-color);
+    color: var(--folly-color);
     background-color: transparent;
 
+    &:focus {
+      outline: 2px solid var(--folly-color);
+      outline-offset: 2px;
+    }
+
     &:hover {
-      border: 1.5px solid #ff005c;
-      color: #fff;
-      background-color: #ff005c;
+      border: 1.5px solid var(--folly-color);
+      color: var(--light-color);
+      background-color: var(--folly-color);
     }
   }
 
   &--red {
-    color: #fff;
-    background-color: #ff005c;
+    color: var(--light-color);
+    background-color: var(--folly-color);
+
+    &:focus {
+      outline: 2px solid var(--folly-color);
+      outline-offset: 2px;
+    }
 
     &:hover {
-      border: 1.5px solid #ff005c;
-      color: #ff005c;
+      border: 1.5px solid var(--folly-color);
+      color: var(--folly-color);
       background-color: transparent;
     }
   }
@@ -51,7 +66,7 @@
     font-weight: 700;
     font-size: 18px;
     text-align: center;
-    color: #fff;
+    color: var(--light-color);
   }
 
   &--w140 {

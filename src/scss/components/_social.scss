@@ -11,16 +11,22 @@
   }
 
   &__link {
+    @include state;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     svg {
       width: 30px;
       height: 30px;
-      fill: #fff;
+      fill: var(--light-color);
       transition: fill 0.4s;
     }
 
     &:hover {
       svg {
-        fill: #33c5f3;
+        fill: var(--blue-color);
       }
     }
   }

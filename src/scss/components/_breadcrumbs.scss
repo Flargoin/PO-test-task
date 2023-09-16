@@ -11,22 +11,25 @@
   }
 
   &__link {
+    @include state;
+
     margin-right: 20px;
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-    color: #00171f;
-    transition: color 0.4s, fill 0.4s;
+    color: var(--text-color);
+    transition: color 0.4s;
 
     svg {
       margin-right: 5px;
+      transition: fill 0.4s;
     }
 
     &:hover {
-      color: #0b76ef;
+      color: var(--blue-color);
 
       svg {
-        fill: #0b76ef;
+        fill: var(--blue-color);
       }
     }
   }

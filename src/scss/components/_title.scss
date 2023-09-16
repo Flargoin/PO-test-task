@@ -2,7 +2,7 @@
   font-weight: 800;
   font-size: 48px;
   text-align: center;
-  color: #00171f;
+  color: var(--text-color);
 
   &--fz24 {
     font-weight: 700;
@@ -10,6 +10,6 @@
   }
 
   &--light {
-    color: #fff;
+    color: var(--light-color);
   }
 }

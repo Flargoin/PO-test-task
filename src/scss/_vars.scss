@@ -8,5 +8,17 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
+  --bg-color: #ecf4f6;
+  --text-color: #00171f;
+  --body-descr-color: #00171f4d;
+  --footer-text-color: #33c5f380;
   --light-color: #fff;
+  --folly-color: #ff005c;
+  --blue-color: #33c5f3;
+
+  // border-radius
+  --radius-5: 5px;
+  --radius-10: 10px;
+  --radius-20: 20px;
+
 }

@@ -1,0 +1,16 @@
+.link {
+  @include state;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--light-color);
+  transition: color 0.4s;
+
+  &--fw500 {
+    font-weight: 500;
+  }
+
+  &--fz12 {
+    font-size: 12px;
+  }
+}

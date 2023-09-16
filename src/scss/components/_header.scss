@@ -19,16 +19,7 @@
       }
 
       &-link {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 20px;
-        text-align: center;
-        color: #00171f;
-        transition: color 0.4s;
-
-        &:hover {
-          color: #33c5f3;
-        }
+        color: var(--text-color);
       }
     }
 
@@ -41,10 +32,12 @@
       }
 
       &-location {
+        @include state;
+
         margin-right: 20px;
         font-weight: 500;
         font-size: 10px;
-        color: #00171f;
+        color: var(--text-color);
         transition: color 0.4s;
         cursor: pointer;
 
@@ -53,36 +46,32 @@
           height: 10px;
           transition: fill 0.4s;
         }
-
-        &:hover {
-          color: #33c5f3;
-
-          svg {
-            fill: #33c5f3;
-          }
-        }
       }
 
       &-time {
         font-weight: 500;
         font-size: 10px;
-        color: #00171f;
+        color: var(--text-color);
       }
     }
 
     &-phone {
+      @include state;
+
       font-weight: 700;
       font-size: 20px;
-      color: #00171f;
+      color: var(--text-color);
       transition: color 0.4s;
 
       &:hover {
-        color: #33c5f3;
+        color: var(--blue-color);
       }
     }
   }
 
   &__logo {
+    @include state;
+
     margin-right: 45px;
   }
 
@@ -92,7 +81,7 @@
     max-width: 159px;
     font-weight: 500;
     font-size: 10px;
-    color: #00171f;
+    color: var(--text-color);
 
     &::before {
       content: "";
@@ -122,11 +111,11 @@
       font-weight: 500;
       font-size: 16px;
       text-align: center;
-      color: #00171f;
+      color: var(--text-color);
       transition: color 0.4s;
 
       &:hover {
-        color: #33c5f3;
+        color: var(--blue-color);
       }
     }
   }
@@ -153,18 +142,23 @@
 
     &:hover {
       svg {
-        fill: #33c5f3;
+        fill: var(--blue-color);
       }
     }
   }
 
   &__link {
+    @include state;
+
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &-count {
       position: absolute;
-      right: -3px;
-      top: 0;
+      right: -6px;
+      top: 3px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -174,8 +168,8 @@
       font-weight: 500;
       font-size: 10px;
       text-align: center;
-      color: #fff;
-      background-color: #33c5f3;
+      color: var(--light-color);
+      background-color: var(--blue-color);
     }
   }
 }
