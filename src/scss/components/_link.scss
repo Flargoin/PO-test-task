@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 16px;
   color: var(--light-color);
-  transition: color 0.4s;
+  transition: color var(--transition-time);
 
   &--fw500 {
     font-weight: 500;

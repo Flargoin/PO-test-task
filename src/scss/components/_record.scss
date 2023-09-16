@@ -19,12 +19,11 @@
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
     overflow: hidden;
     margin: 0 auto;
     border-radius: var(--radius-20);
-    max-width: 1160px;
     min-height: 350px;
+    max-width: 1160px;
 
     img {
       width: calc(100% - 2px);
@@ -36,26 +35,29 @@
 
   &__img {
     position: absolute;
-    top: -26px;
     left: -100px;
+    top: -27px;
+    z-index:var(--ui-index-2);
   }
 
   &__content {
+    position: relative;
     padding: 61px 35px;
+    z-index: var(--ui-index-2);
 
     &::after {
       content: "";
       position: absolute;
-      left: 448px;
+      left: 0;
       right: 0;
       top: 0;
       bottom: 0;
       display: block;
       border-radius: 0 20px 20px 0;
-      width: calc(100% - 515px);
-      height: calc(100% + 3px);
+      width: 100%;
+      height: calc(100% + 5px);
       z-index: -1;
-      background-color: rgba(0,23,31,.8);
+      background-color: #00171fcc;
     }
   }
 

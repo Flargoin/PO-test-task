@@ -38,13 +38,13 @@
         font-weight: 500;
         font-size: 10px;
         color: var(--text-color);
-        transition: color 0.4s;
+        transition: color var(--transition-time);
         cursor: pointer;
 
         svg {
           width: 10px;
           height: 10px;
-          transition: fill 0.4s;
+          transition: fill var(--transition-time);
         }
       }
 
@@ -61,7 +61,7 @@
       font-weight: 700;
       font-size: 20px;
       color: var(--text-color);
-      transition: color 0.4s;
+      transition: color var(--transition-time);
 
       &:hover {
         color: var(--blue-color);
@@ -112,7 +112,7 @@
       font-size: 16px;
       text-align: center;
       color: var(--text-color);
-      transition: color 0.4s;
+      transition: color var(--transition-time);
 
       &:hover {
         color: var(--blue-color);
@@ -133,7 +133,7 @@
 
   &__item {
     svg {
-      transition: fill 0.4s;
+      transition: fill var(--transition-time);
     }
 
     &:not(:last-child) {
