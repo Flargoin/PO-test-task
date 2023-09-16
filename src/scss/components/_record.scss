@@ -3,14 +3,16 @@
 
   &__container {
     position: relative;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1160px;
   }
 
   &__wrapper {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    padding-left: 385px;
-    max-width: 1160px;
+    padding-left: 372px;
+    width: 100%;
   }
 
   &__bg {
@@ -20,7 +22,6 @@
     top: 0;
     bottom: 0;
     overflow: hidden;
-    margin: 0 auto;
     border-radius: var(--radius-20);
     min-height: 350px;
     max-width: 1160px;
@@ -35,14 +36,15 @@
 
   &__img {
     position: absolute;
-    left: -100px;
+    left: -164px;
     top: -27px;
-    z-index:var(--ui-index-2);
+    z-index:var(--ui-index-3);
   }
 
   &__content {
     position: relative;
     padding: 61px 35px;
+    width: 100%;
     z-index: var(--ui-index-2);
 
     &::after {

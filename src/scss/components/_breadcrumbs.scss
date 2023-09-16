@@ -20,6 +20,12 @@
     color: var(--text-color);
     transition: color var(--transition-time);
 
+    &-main {
+      span {
+        text-decoration: underline;
+      }
+    }
+
     svg {
       margin-right: 5px;
       transition: fill var(--transition-time);
