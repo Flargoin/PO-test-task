@@ -6,11 +6,11 @@
 
     <div class="credit__wrapper">
       <div class="credit__img">
-        <img srcset="../img/credit/credit-min.png 335w,
-                    ../img/credit/credit.png 1920w"
-             sizes="(max-width: 991px) 330px,
-                    (min-width: 992px) 1920px"
-        src="../img/credit/credit.png" alt="credit img">
+        <picture>
+          <source media="(max-width: 991px)" srcset="../img/credit/credit-min.png">
+          <source media="(min-width: 992px)" srcset="../img/credit/credit.png">
+          <img src="../img/credit/credit.png" alt="credit image">
+        </picture>
       </div>
 
       <div class="credit__content">
