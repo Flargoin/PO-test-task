@@ -2,7 +2,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
  Swiper.use([Navigation, Pagination]);
 
- const swiper = new Swiper(".services__slider", {
+ const serviceSlider = new Swiper(".services__slider", {
   direction: 'horizontal',
 
   breakpoints: {
@@ -21,6 +21,29 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
     991: {
       slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: false
+    }
+  }
+ });
+
+ const paymentsSlider = new Swiper(".payment__slider", {
+  direction: 'horizontal',
+
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      navigation: {
+        nextEl: '.payment__slider-next',
+        prevEl: '.payment__slider-prev',
+      }
+    },
+
+    576: {
+      spaceBetween: 20,
+    },
+
+    991: {
       spaceBetween: 30,
       navigation: false
     }
