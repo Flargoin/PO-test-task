@@ -10,6 +10,22 @@
       padding: 30px 50px 60px;
     }
   }
+
+  .footer {
+    &__body {
+      flex-wrap: wrap;
+    }
+
+    &__menu {
+      margin-bottom: 20px;
+    }
+
+    &__column {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 @include tablet {
@@ -125,10 +141,20 @@
   }
 
   .example {
+    padding-bottom: 60px;
+
     &__slider {
       border-radius: 10px;
       height: 290px;
       max-width: 335px;
+
+      &-prev {
+        left: 20px;
+      }
+
+      &-next {
+        right: 20px;
+      }
 
       &-prev,
       &-next {
@@ -141,14 +167,17 @@
           background-image: url("../../img/svg/arrow-dark.svg");
         }
       }
+    }
+  }
 
-      &-prev {
-        left: 20px;
-      }
+  .footer {
+    &__menu {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
 
-      &-next {
-        right: 20px;
-      }
+    &__column {
+      margin-bottom: 25px;
     }
   }
 
