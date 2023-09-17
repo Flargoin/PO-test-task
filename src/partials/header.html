@@ -32,15 +32,17 @@
         ПВХ окон и дверей с 2002 года
       </p>
 
-      <button class="btn-reset btn btn--outline-red btn--wlink 110 header__btn">
-        Сотрудничество
-      </button>
+      <div class="header__top-menu">
+        <button class="btn-reset btn btn--outline-red btn--wlink 110 header__btn">
+          Сотрудничество
+        </button>
 
-      <ul class="list-reset header__top-nav">
-        <li class="header__top-nav-item"><a href="#" class="link link--fw500 link--fz12 header__top-nav-link">Каталог</a></li>
-        <li class="header__top-nav-item"><a href="#" class="link link--fw500 link--fz12 header__top-nav-link">Цены</a></li>
-        <li class="header__top-nav-item"><a href="#" class="link link--fw500 link--fz12 header__top-nav-link">Контакты</a></li>
-      </ul>
+        <ul class="list-reset header__top-nav">
+          <li class="header__top-nav-item"><a href="#" class="link link--fw500 link--fz12 header__top-nav-link">Каталог</a></li>
+          <li class="header__top-nav-item"><a href="#" class="link link--fw500 link--fz12 header__top-nav-link">Цены</a></li>
+          <li class="header__top-nav-item"><a href="#" class="link link--fw500 link--fz12 header__top-nav-link">Контакты</a></li>
+        </ul>
+      </div>
 
       <div class="header__top-contacts">
         <div class="header__top-contacts-info">
@@ -60,33 +62,39 @@
         </a>
       </div>
 
-      <ul class="list-reset action header__top-action" title="">
-        <li class="action__item">
-        <a href="#" target="_blank" class="action__link action__link--tg" aria-label="Напишите нам в Telegram">
-          <svg>
-            <use xlink:href="img/sprite.svg#tg"></use>
-          </svg>
-        </a>
-      </li>
-        <li class="action__item">
-          <a href="#" target="_blank" class="action__link action__link--wa" aria-label="Напишите нам в WhatsApp">
+      <div class="action">
+        <ul class="list-reset action__list header__top-action" title="">
+          <li class="action__item">
+          <a href="#" target="_blank" class="action__link action__link--tg" aria-label="Напишите нам в Telegram">
             <svg>
-              <use xlink:href="img/sprite.svg#wa"></use>
+              <use xlink:href="img/sprite.svg#tg"></use>
             </svg>
           </a>
         </li>
-        <li class="action__item">
-          <a href="#" target="_blank" class="action__link action__link--cart" aria-label="Ваша корзина">
-            <svg>
-              <use xlink:href="img/sprite.svg#cart"></use>
-            </svg>
-            <span class="action__link-count">9</span>
-          </a>
-        </li>
-      </ul>
+          <li class="action__item">
+            <a href="#" target="_blank" class="action__link action__link--wa" aria-label="Напишите нам в WhatsApp">
+              <svg>
+                <use xlink:href="img/sprite.svg#wa"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="action__item">
+            <a href="#" target="_blank" class="action__link action__link--cart" aria-label="Ваша корзина">
+              <svg>
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+              <span class="action__link-count">9</span>
+            </a>
+          </li>
+        </ul>
 
-      <button class="btn-reset btn header__btn-callback">
-        Заказать звонок
+        <button class="btn-reset btn header__btn-callback">
+          Заказать звонок
+        </button>
+      </div>
+
+      <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
       </button>
     </div>
 

@@ -1,16 +1,21 @@
 .header {
   padding: 20px 0 14px;
-  height: 110px;
+  min-height: 110px;
 
   &__top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
+
+    &-menu {
+      display: flex;
+      align-items: center;
+    }
 
     &-nav {
       display: flex;
       align-items: center;
-      margin-right: 30px;
 
       &-item {
         &:not(:last-child) {
@@ -24,8 +29,6 @@
     }
 
     &-contacts {
-      margin-right: 107px;
-
       &-info {
         display: flex;
         align-items: center;
@@ -71,8 +74,6 @@
 
   &__logo {
     @include state;
-
-    margin-right: 45px;
   }
 
   &__descr {
@@ -98,18 +99,49 @@
 
   &__btn {
     margin-right: 15px;
+
+    &-callback {
+      margin-left: 15px;
+    }
   }
 
   &__nav {
     &-list {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      overflow-x: auto;
+      padding: 10px 0;
+
+      /* Работает в Firefox */
+      scrollbar-color: var(--blue-color) #11111120;
+      scrollbar-width: thin;
+
+      /* Работает в Chrome, Edge и Safari */
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border: 3px solid transparent;
+        border-radius: 20px;
+        background-color: var(--blue-color);
+      }
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
     }
 
     &-link {
       font-weight: 500;
       font-size: 16px;
+      white-space: nowrap;
       text-align: center;
       color: var(--text-color);
       transition: color var(--transition-time);
@@ -119,12 +151,22 @@
       }
     }
   }
+
+  .burger {
+    @include burger;
+
+    display: none;
+  }
 }
 
 .action {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
 
   svg {
     width: 20px;
