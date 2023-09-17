@@ -33,19 +33,22 @@ import Swiper, { Navigation, Pagination } from 'swiper';
   breakpoints: {
     320: {
       slidesPerView: "auto",
-      navigation: {
-        nextEl: '.payment__slider-next',
-        prevEl: '.payment__slider-prev',
-      }
-    },
+      spaceBetween: 20
+    }
+  }
+ });
 
-    576: {
-      spaceBetween: 20,
-    },
+ const exampleSlider = new Swiper(".example__slider", {
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.example__slider-next',
+    prevEl: '.example__slider-prev',
+  },
 
-    991: {
-      spaceBetween: 30,
-      navigation: false
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 20
     }
   }
  });
