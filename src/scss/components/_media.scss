@@ -52,3 +52,72 @@
     }
   }
 }
+
+@include mobile {
+  .hero {
+    height: auto;
+    min-height: 430px;
+    background-color: #fff;
+
+    &__bg {
+      position: relative;
+      height: 180px;
+    }
+
+    &__container {
+      padding: 25px 20px 30px;
+      justify-content: flex-start;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 32px;
+      color: var(--text-color);
+    }
+
+    &__descr {
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: var(--text-color);
+    }
+
+    &__form {
+      flex-direction: column;
+    }
+
+    .form {
+      &__group {
+        width: 100%;
+      }
+
+      &__label {
+        color: var(--text-color);
+      }
+
+      &__input {
+        margin: 0 0 20px;
+        border: 1.5px solid var(--text-color);
+        width: 100%;
+      }
+
+      &__btn {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .custom-checkbox {
+        &__content {
+          color: var(--text-color);
+
+          &::before {
+            border-color: var(--text-color);
+          }
+
+          &::after {
+            background-image: url("../../img/svg/check-black.svg");
+          }
+        }
+      }
+    }
+  }
+}
