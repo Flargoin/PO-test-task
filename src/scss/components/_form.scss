@@ -1,5 +1,6 @@
 .form {
   &__group {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,17 +39,12 @@
     transition: border var(--transition-time);
 
     &:focus {
-      outline: 2px solid var(--blue-color);
-      outline-offset: 3px;
+      outline: 1.5px solid var(--blue-color);
     }
 
     &:active {
       outline: none;
     }
-  }
-
-  .custom-checkbox {
-    @include custom-checkbox;
   }
 
   &__btn {
@@ -57,5 +53,20 @@
     font-size: 18px;
     text-align: center;
     color: var(--light-color);
+  }
+
+  .custom-checkbox {
+    @include custom-checkbox;
+  }
+
+  .just-validate-error-label {
+    position: absolute;
+    bottom: -12px;
+    font-size: 10px;
+    color: rgb(179 31 31);
+  }
+
+  .just-validate-error-field {
+    border-color: rgb(179 31 31);
   }
 }
