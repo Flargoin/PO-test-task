@@ -7,7 +7,23 @@
 
   .record {
     &__container {
+      padding: 0 !important;
       max-width: 335px;
+    }
+
+    &__title {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    &__bg {
+      position: static;
+      border-radius: 0;
+      min-height: auto;
+
+      img {
+        height: 280px;
+      }
     }
 
     &__wrapper {
@@ -16,12 +32,46 @@
 
     &__content {
       padding: 30px;
+
+      &::after {
+        border-radius: 0 0 20px 20px;
+        background-color: rgb(0, 23, 31);
+      }
+    }
+
+    &__img {
+      left: 0;
+/*       top: -20px; */
     }
 
     &__form {
       &-wrapper {
         display: flex;
         flex-direction: column;
+      }
+    }
+
+    .form {
+      &__group {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      &__input {
+        width: 100%;
+      }
+
+      &__btn {
+        margin-bottom: 10px;
+        width: 100%;
+        color: var(--text-color);
+        background-color: #fff;
+      }
+
+      .custom-checkbox {
+        &__content {
+          letter-spacing: -0.5px;
+        }
       }
     }
   }
