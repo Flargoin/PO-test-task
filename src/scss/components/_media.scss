@@ -5,6 +5,27 @@
     }
   }
 
+  .record {
+    &__container {
+      max-width: 335px;
+    }
+
+    &__wrapper {
+      padding-left: 0;
+    }
+
+    &__content {
+      padding: 30px;
+    }
+
+    &__form {
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
   .credit {
     &__content {
       padding: 30px 50px 60px;

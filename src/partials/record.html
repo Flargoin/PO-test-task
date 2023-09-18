@@ -1,12 +1,23 @@
 <section class="record">
   <div class="container record__container">
     <div class="record__bg">
-      <img src="../img/record/record-bg.png" alt="record bg">
+      <picture>
+        <source media="(max-width: 1200)" srcset="../img/record/record-bg.png">
+        <source media="(min-width: 1201)" srcset="../img/record/record-bg.png">
+        <img src="../img/record/record-bg.png" alt="record bg">
+      </picture>
+
     </div>
 
     <div class="record__wrapper">
       <div class="record__img">
-        <img src="../img/record/window.png" alt="Окно">
+        <picture>
+          <source media="(max-width: 1200)" srcset="../img/record/window-min.png">
+          <source media="(min-width: 1201)" srcset="../img/record/window.png">
+          <img src="../img/record/window.png" alt="Окно">
+        </picture>
+
+
       </div>
 
       <div class="record__content">
